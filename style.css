@@ -128,7 +128,7 @@ p {
   border-radius: 10px;
 }
 .lock-info {
-  padding: 20px 0px;
+  padding: 20px;
   flex-basis: 50%;
   height: 100%;
   display: flex;
@@ -178,7 +178,7 @@ p {
   width: 420px;
   height: 400px;
   object-fit: cover;
-  margin-left: 50px;
+  margin-left: 80px;
 }
 .lock-header {
   margin-top: 0px;
