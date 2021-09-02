@@ -511,8 +511,8 @@ p {
   .lock-img img {
     display: inline-block;
     margin: 0 auto;
-    width: 300px;
-    height: 260px;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
     padding-bottom: 20px;
   }
