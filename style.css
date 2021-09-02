@@ -411,7 +411,7 @@ p {
 .form-group textarea[type="text"]:hover,
 .form-group label:hover ~ input[type="text"] {
   background: var(--light-gray);
-  border: none;
+  border: 2px solid var(--black);
 }
 
 .btn2 {
