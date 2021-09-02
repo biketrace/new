@@ -515,6 +515,7 @@ p {
     height: auto;
     object-fit: cover;
     padding-bottom: 20px;
+    padding-left:15px;
   }
   .btn {
     margin-top: 0px;
