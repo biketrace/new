@@ -950,6 +950,9 @@ p {
     border-bottom: 1px solid var(--dark-gray);
     width: 90%;
   }
+  .faq-header p{
+    max-width:80%;
+  }
 
   /*End of why us*/
 }
