@@ -39,7 +39,7 @@ p {
 .sub-header2 {
   font-size: 20px;
   font-weight: 500;
-  text-align:center;
+  text-align: center;
 }
 .sub-header2 {
   padding-bottom: 50px;
@@ -150,10 +150,10 @@ p {
   line-height: 1.8;
   font-weight: 400;
 }
-.btn {
+.btn button {
   background-color: var(--dark-red);
   display: block;
-  margin: 0 auto;
+  margin: 12px auto;
   width: 180px;
   border: none;
   outline: none;
@@ -167,7 +167,7 @@ p {
 
   transition: 0.3s ease background-color;
 }
-.btn:hover {
+.btn button:hover {
   background-color: #333;
   color: var(--white);
   border: none;
@@ -735,9 +735,9 @@ p {
   .app-column {
     height: 350px;
   }
-  /*Vision section*/
-  .vision-header h2{
-    width:80%;
+  /*vision section*/
+  .vision-header h2 {
+    width: 80%;
   }
 
   /*Faq*/
@@ -761,8 +761,8 @@ p {
     flex: 100%;
     flex-direction: column;
   }
-  .team-column{
-    margin-bottom:20px;
+  .team-column {
+    margin-bottom: 20px;
   }
 
   .team__card {
@@ -858,8 +858,9 @@ p {
   .faq-header h2,
   .contact-header h2 {
     font-size: 1.8em;
-    text-align:center;
+    text-align: center;
   }
+
   /*lock*/
   .lock-header {
     font-size: 1.5em;
@@ -897,6 +898,11 @@ p {
   }
   .app-header h2 {
     font-size: 2em;
+  }
+  /*faq*/
+
+  .faq-header p {
+    max-width: 80%;
   }
 
   .nav-menu {
@@ -956,9 +962,6 @@ p {
     border-right: none;
     border-bottom: 1px solid var(--dark-gray);
     width: 90%;
-  }
-  .faq-header p{
-    max-width:80%;
   }
 
   /*End of why us*/
@@ -1030,3 +1033,4 @@ p {
     font-size: 20px;
   }
 }
+
