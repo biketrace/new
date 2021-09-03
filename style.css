@@ -757,6 +757,9 @@ p {
     flex: 100%;
     flex-direction: column;
   }
+  .team-column{
+    margin-bottom:20px;
+  }
 
   .team__card {
     height: 250px;
