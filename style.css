@@ -735,6 +735,10 @@ p {
   .app-column {
     height: 350px;
   }
+  /*Vision section*/
+  .vision-header h2{
+    width:80%;
+  }
 
   /*Faq*/
   .border-line {
