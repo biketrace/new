@@ -850,6 +850,7 @@ p {
   .faq-header h2,
   .contact-header h2 {
     font-size: 1.8em;
+    text-align:center;
   }
   /*lock*/
   .lock-header {
