@@ -150,13 +150,13 @@ p {
   line-height: 1.8;
   font-weight: 400;
 }
-.btn{
-  margin:0px auto;
+.btn {
+  margin: 0px auto;
 }
 .btn button {
   background-color: var(--dark-red);
   display: block;
-  margin: 10px auto;
+  margin: 12px auto;
   width: 180px;
   border: none;
   outline: none;
@@ -765,7 +765,7 @@ p {
     flex-direction: column;
   }
   .team-column {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .team__card {
@@ -777,7 +777,7 @@ p {
     padding: 5px;
   }
   .team__container {
-    margin-bottom: 5px;
+    margin-bottom: 35px;
     padding: 5px;
   }
   .team__container h3,
@@ -875,7 +875,7 @@ p {
     height: 950px;
   }
   .lock-column {
-    margin-top:90px;
+    margin-top: 90px;
     flex-direction: column-reverse;
   }
   .lock-info {
@@ -907,15 +907,17 @@ p {
 
   .faq-header p {
     max-width: 80%;
+    margin-bottom: 20px;
   }
 
   .nav-menu {
     position: fixed;
-    left: -100%;
+    left: -50%;
     top: 5rem;
     flex-direction: column;
-    background-color: #fff;
-    width: 100%;
+    font-size: 16px;
+    background-color: var(--light-gray);
+    width: 50%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
@@ -934,13 +936,14 @@ p {
   /* Teams section*/
   .team-section {
     height: 1700px;
+    margin-bottom: 30px;
   }
   .team-section h2 {
     font-size: 30px;
   }
   .team__container h3,
   .team__container h4 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
   }
@@ -1037,4 +1040,3 @@ p {
     font-size: 20px;
   }
 }
-
