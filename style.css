@@ -150,10 +150,13 @@ p {
   line-height: 1.8;
   font-weight: 400;
 }
+.btn{
+  margin:0px auto;
+}
 .btn button {
   background-color: var(--dark-red);
   display: block;
-  margin: 12px auto;
+  margin: 10px auto;
   width: 180px;
   border: none;
   outline: none;
