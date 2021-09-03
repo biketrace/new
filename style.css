@@ -869,9 +869,10 @@ p {
 
   .lock {
     margin-top: 10px;
-    height: 800px;
+    height: 950px;
   }
   .lock-column {
+    margin-top:90px;
     flex-direction: column-reverse;
   }
   .lock-info {
