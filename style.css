@@ -831,7 +831,7 @@ p {
     margin-bottom: 20px;
   }
   .section p {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 
@@ -929,7 +929,9 @@ p {
   }
 
   .nav-item {
-    margin: 2.5rem 0;
+    margin: .5rem 0;
+    border-bottom: 2px solid var(--dark-red);
+    width:50%;
   }
   /* Teams section*/
 
