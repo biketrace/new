@@ -6,6 +6,8 @@
   --dark-red: #b7094c;
   --white: #fff;
   --black: #000000;
+  --light-pink: #f1e7e8;
+  --top-footer: #343434;
 }
 
 * {
@@ -96,6 +98,8 @@ p {
 .nav-logo {
   height: 80px;
 }
+
+/* Lock Section */
 #lock {
   background-color: var(--light-gray);
   margin-bottom: 50px;
@@ -191,7 +195,7 @@ p {
 .lock-header {
   margin-top: 0px;
   margin-bottom: 10px;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1;
   font-weight: 700;
 }
@@ -213,69 +217,9 @@ p {
   transform: scale(1.1);
 }
 
-/*livability section*/
+/*End of Lock Section */
 
-.livability-section {
-  background-color: var(--white);
-  width: 100%;
-  height: 800px;
-  color: var(--black);
-}
-.liveability-img img {
-  padding-top: 30px;
-  height: 120px;
-}
-
-.liveability-header h2 {
-  font-size: 34px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 20px;
-  margin-bottom: 80px;
-}
-
-.container-liveability {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 80px 0px;
-}
-.row-liveability {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 25px;
-}
-.section,
-.section2 {
-  position: relative;
-  padding-left: 10px;
-}
-.section p,
-.section2 p {
-  font-size: 17px;
-  text-align: center;
-}
-.section h3 {
-  text-align: center;
-  padding-bottom: 10px;
-}
-.liveability-img img,
-.section img {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  width: 100px;
-  height: 100px;
-}
-
-.object2 {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
-
-/*app section*/
+/*App section*/
 #app {
   background-color: var(--white);
   /*height: 1000px;*/
@@ -291,75 +235,42 @@ p {
   line-height: 1.2;
   font-weight: 600;
 }
-.heading {
+
+.container-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0px;
+}
+.row-app {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 25px;
+}
+.section-app,
+.section2 {
+  position: relative;
+  padding-left: 10px;
+}
+.section-app p {
+  font-size: 17px;
   text-align: center;
 }
-.app-header p,
-.app-info p,
-.vision-header p {
+.section-app h3 {
   text-align: center;
+  padding-bottom: 10px;
 }
-.app-info p {
-  margin-bottom: 10px;
-  font-size: 1em;
-  line-height: 1.8;
-  font-weight: 400;
-}
-.app-img img {
+
+.section-app img {
   display: block;
   margin: 0 auto;
+  margin-bottom: 20px;
   width: 100px;
   height: 100px;
 }
-.app-col {
-  max-height: 450px;
-}
 
-.card {
-  border: none;
-  border-radius: 10px;
-}
-
-.icon {
-  width: 50px;
-  height: 50px;
-  background-color: #eee;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 39px;
-}
-/*Liveability section */
-.vision {
-  min-height: 1000px;
-}
-.about-header p {
-  width: 300px;
-  font-size: 15px;
-  font-weight: 700;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 20px;
-  padding: 10px;
-  margin-top: 70px;
-}
-
-.mission-cards {
-  width: 100%;
-}
-
-.mission-card {
-  width: 316px;
-  height: 230px;
-  margin: 10px auto;
-  font-weight: 700px;
-}
-.card-body {
-  font-size: 0em;
-}
-.center-vertically {
-  padding-top: 35px;
-}
+/*End of App section*/
 
 /*vision section*/
 #vision {
@@ -376,9 +287,6 @@ p {
   margin: auto;
 }
 
-.us-header {
-  margin-top: 30px;
-}
 .all-items,
 .faq-items {
   display: flex;
@@ -437,6 +345,8 @@ p {
 .item:hover .item-img img {
   transform: scale(1.1);
 }
+
+/* End of Vision section*/
 
 /*Team section */
 .team-section {
@@ -554,6 +464,7 @@ p {
 .team__container h2 {
   text-align: center;
 }
+
 /*FAQ */
 #faq {
   width: 100%;
@@ -576,7 +487,9 @@ p {
   height: 50px;
 }
 
-/*Contact*/
+/*End of Faq section */
+
+/*Contact section*/
 .contact {
   height: 800px;
   width: 100%;
@@ -594,7 +507,6 @@ p {
   color: var(--dark-red);
 }
 
-.container-newsletter,
 .container-contact {
   width: 90%;
   max-height: 700px;
@@ -602,7 +514,7 @@ p {
   margin: 0 auto;
   padding: 20px;
   box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
-  background-color: white;
+  background-color: var(--white);
   border-radius: 8px;
   margin-bottom: 20px;
 }
@@ -630,7 +542,7 @@ p {
 .form-group textarea[type="text"]:hover,
 .form-group label:hover ~ input[type="text"] {
   background: var(--light-gray);
-  border: 2px solid black;
+  border: 2px solid var(--black);
 }
 
 .btn2 {
@@ -647,7 +559,6 @@ p {
   text-align: center;
   cursor: pointer;
   margin-top: 20px;
-
   transition: 0.3s ease background-color;
 }
 .btn2:hover {
@@ -669,10 +580,40 @@ p {
 }
 #status.error {
   background-color: var(--orange);
-  color: white;
+  color: var(--white);
   animation: status 4s ease forwards;
 }
+
+/* End of Contact section*/
+
 /*Footer section*/
+
+#footer {
+  background-color: var(--top-footer);
+  height: 400px;
+}
+.footer-color {
+  background-color: var(--top-footer);
+}
+.top-footer {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  width: 100%;
+  display: grid;
+  /* Define Auto Row size */
+  grid-auto-rows: 300px;
+  /*Define our columns */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+.footer-item {
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--white);
+  height: auto;
+}
 .list-group-item {
   font-size: 18px;
 }
@@ -680,18 +621,17 @@ p {
   background-color: #333;
   color: var(--white);
 }
-.footer h5 {
+.footer-item h5 {
   font-size: 24px;
   font-weight: 700;
+  padding-bottom: 10px;
 }
-.footer-row {
-  width: 80%;
-}
+
 .fab {
   padding: 10px;
   border: 1px solid #f8f5f1;
   border-radius: 20px;
-  margin-left: 10px;
+  margin-right: 10px;
   color: var(--white);
   width: 80%;
 }
@@ -699,13 +639,28 @@ p {
   border: none;
   background: var(--dark-red);
 }
-.get-social h5 {
-  margin-left: 10px;
-}
+
 .footer-bottom {
   background-color: var(--black);
   color: var(--white);
 }
+#subscribe input {
+  width: 150px;
+  background-color: var(--dark-red);
+  font-weight: 700;
+  padding: 8px 16px;
+  border: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: var(--white);
+  border-radius: 8px;
+  transition: 0.3s ease background-color;
+}
+#subscribe input:hover {
+  background-color: var(--light-gray);
+  color: var(--black);
+}
+
 @keyframes status {
   0% {
     opacity: 1;
@@ -811,25 +766,22 @@ p {
     font-size: 10px;
   }
   /*footer section*/
+  #footer {
+    height: 800px;
+  }
   .footer h5 {
     font-size: 20px;
     font-weight: 700;
   }
+  .footer-item2 {
+    height: 250px;
+  }
+
   .footer-bottom {
     background-color: var(--black);
     color: var(--white);
   }
 
-  .liveability-img img {
-    padding-top: 30px;
-    height: 80px;
-  }
-
-  .liveability-header h2 {
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
   .section p {
     font-size: 17px;
   }
@@ -854,6 +806,30 @@ p {
 
   .nav-menu.active {
     z-index: 2;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -50%;
+    top: 4rem;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #eeede7;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 0.5rem 0;
+    border-bottom: 2px solid var(--dark-red);
+    width: 50%;
   }
 
   .app-header h2,
@@ -910,31 +886,6 @@ p {
     margin-bottom: 20px;
   }
 
-  .nav-menu {
-    position: fixed;
-    left: -50%;
-    top: 5rem;
-    flex-direction: column;
-    font-size: 16px;
-    background-color: var(--light-gray);
-    width: 50%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
-  .nav-item {
-    margin: .5rem 0;
-    border-bottom: 2px solid var(--dark-red);
-    width:50%;
-  }
-  /* Teams section*/
-
   /* Teams section*/
   .team-section {
     height: 1700px;
@@ -973,7 +924,11 @@ p {
     width: 90%;
   }
 
-  /*End of why us*/
+  /* Footer */
+
+  #footer {
+    min-height: 500px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
