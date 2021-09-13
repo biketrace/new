@@ -456,14 +456,12 @@ p {
 .team__container h3 {
   color:var(--dark-red);
   font-size: 18px;
-  font-weight: bold;
   margin: -5px 0px;
 }
 .team__container h4 {
   text-align: center;
   font-style:italic;
   font-size: 16px;
-  font-weight: bold;
   margin: -5px 0px 5px 0px;
 }
 .team__container h5 {
