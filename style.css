@@ -354,60 +354,34 @@ p {
 /*Liveability section*/
 #liveability {
   background-color: var(--light-gray);
-  height: 600px;
-}
-/*livability section*/
-
-.livability-section {
-  background-color: #333333;
+  width: 100%;
   height: 700px;
-  color: var(--white);
 }
-.liveability-img img {
-  padding-top: 30px;
-  height: 120px;
-}
-
-.liveability-header h2 {
-  font-size: 34px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 20px;
-  margin-bottom: 80px;
-}
-
-.container-liveability {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.row-liveability {
+.liveability-items {
   width: 80%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px auto;
 }
-.section,
-.section2 {
-  position: relative;
-  padding-left: 10px;
+.liveability-item {
+  flex: 50%;
+  text-align: right;
+  border-right: 2px solid var(--dark-gray);
 }
-.section p,
-.section2 p {
-  font-size: 18px;
+.liveability-image {
+  flex: 50%;
 }
-.liveability-img img,
-.section img {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
+.liveability-image img {
+  width: 300px;
+  height: 300px;
 }
 
-.object2 {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 10px;
+.info-item1 {
+  margin-bottom: 20px;
+  padding: 10px 20px;
 }
+
 /*Team section */
 .team-section {
   height: 1150px;
@@ -454,14 +428,15 @@ p {
   padding: 10px;
 }
 .team__container h3 {
-  color:var(--dark-red);
+  color: var(--dark-red);
   font-size: 18px;
   margin: -5px 0px;
 }
 .team__container h4 {
   text-align: center;
-  font-style:italic;
+  font-style: italic;
   font-size: 16px;
+  font-weight: 300px;
   margin: -5px 0px 5px 0px;
 }
 .team__container h5 {
@@ -760,7 +735,7 @@ p {
 
   /* Liveability section*/
   #liveability {
-    height: 1000px;
+    height: 1200px;
   }
 
   /*Faq*/
@@ -988,6 +963,13 @@ p {
   /*liveability*/
   #liveability {
     min-height: 800px;
+  }
+  .liveability-items {
+    flex-direction: column;
+  }
+  .liveability-item {
+    border-right: none;
+    text-align: left;
   }
   /*faq*/
   .border-line {
