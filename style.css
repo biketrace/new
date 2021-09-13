@@ -878,6 +878,7 @@ p {
   .app-header h2,
   .vision-header h2,
   .faq-header h2,
+  .liveability-header h2,
   .contact-header h2 {
     font-size: 1.8em;
     text-align: center;
@@ -969,7 +970,7 @@ p {
   }
   .liveability-item {
     border-right: none;
-    text-align: left;
+    text-align: center;
   }
   /*faq*/
   .border-line {
