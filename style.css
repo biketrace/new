@@ -25,9 +25,6 @@ body {
   line-height: 26px;
   overflow-x: scroll;
 }
-html {
-  scroll-behavior: smooth;
-}
 
 li {
   list-style: none;
@@ -54,8 +51,9 @@ p {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color:var(--white);
- /* box-shadow: 0 5px 2px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1) inset;*/
+  /* box-shadow: 0 5px 2px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1) inset;*/
+
+  background-color: var(--white);
 }
 
 .navbar {
@@ -87,6 +85,7 @@ p {
 
 .nav-item {
   margin-left: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-link {
@@ -94,8 +93,11 @@ p {
   font-weight: 500;
   color: var(--black);
 }
-.nav-link:active {
+.nav-link.active {
+  font-size: 1.2rem;
+  font-weight: 400;
   color: var(--dark-red);
+  border-bottom: 2px solid black;
 }
 
 .nav-link:hover {
@@ -505,29 +507,63 @@ p {
   text-align: center;
 }
 
-/*FAQ */
-#faq {
-  width: 100%;
+/* Faq section */
+.faq-container {
+  background-color: var(--light-gray);
+  height: 500px;
 }
-.faq-header p {
-  max-width: 60%;
-  margin-bottom: 10px;
-  font-size: 1em;
-  margin: 0 auto;
+.faq-header h2 {
+  padding-top: 30px;
+}
+.faq-header h3 {
   text-align: center;
-  line-height: 1.8;
-  font-weight: 300;
+  margin-bottom: 60px;
 }
-.faq-item {
-  background-color: var(--white);
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
-.border-line {
-  border-right: 2px solid var(--dark-gray);
-  height: 50px;
+.accordion-info {
+  margin-top: 60px;
+  width: 60%;
+  margin: 0px auto;
 }
 
-/*End of Faq section */
+p.accordion.active,
+p.accordion:hover {
+  background-color: var(--dark-gray);
+}
+
+p.accordion {
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 8px;
+}
+/* Unicode character for "plus" sign (+) */
+p.accordion:after {
+  content: "\2795";
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+/* Unicode character for "minus" sign (-) */
+p.accordion.active:after {
+  content: "\2796";
+}
+
+/* Style the element that is used for the panel class */
+
+div.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  margin-bottom: 10px;
+}
+
+div.panel.show {
+  opacity: 1;
+  max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
 
 /*Contact section*/
 .contact {
@@ -635,33 +671,6 @@ p {
 .footer-color {
   background-color: var(--top-footer);
 }
-/*
-.fab {
-  padding: 10px;
-  border-radius: 20px;
-  margin-right: 10px;
-  color: var(--white);
-  width: 80%;
-}
-
-
-
-#subscribe input {
-  width: 150px;
-  background-color: var(--dark-red);
-  font-weight: 700;
-  padding: 8px 16px;
-  border: none;
-  text-transform: capitalize;
-  cursor: pointer;
-  color: var(--white);
-  border-radius: 8px;
-  transition: 0.3s ease background-color;
-}
-#subscribe input:hover {
-  background-color: var(--light-gray);
-  color: var(--black);
-}*/
 
 /*footer new*/
 .search-text {
@@ -722,7 +731,7 @@ p {
 /* The company logo */
 
 .footer-left img {
-  width: 300px;
+  width: 20%;
 }
 
 /* Footer links */
@@ -858,26 +867,7 @@ p {
   text-align: center;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries 
-
-@media (max-width: 880px) {
-  .footer-distributed {
-    font: bold 14px sans-serif;
-  }
-
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  .footer-distributed .footer-center i {
-    margin-left: 0;
-  }
-}*/
+/
 
 /*End*/
 
@@ -993,6 +983,16 @@ p {
     text-align: center;
     font-size: 10px;
   }
+
+  /*faq*/
+
+  .faq-container {
+    min-height: 700px;
+  }
+  .accordion-info {
+    width: 55%;
+  }
+
   /*footer section*/
   #footer {
     height: 800px;
@@ -1112,9 +1112,8 @@ p {
   }
   /*faq*/
 
-  .faq-header p {
-    max-width: 80%;
-    margin-bottom: 20px;
+  .faq-container {
+    height: 650px;
   }
 
   /* Teams section*/
