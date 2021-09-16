@@ -7,6 +7,29 @@ function mobileMenu() {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 }
+
+
+/* Toggle between adding and removing the "active" and "show" classes when the user clicks on one of the "Section" buttons. The "active" class is used to add a background color to the current button when its belonging panel is open. The "show" class is used to open the specific accordion panel */
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function () {
+    this.classList.toggle("active");
+    this.nextElementSibling.classList.toggle("show");
+  };
+}
+
+
+/*
+
+
+
+
+
+
+
+
+
 const navLink = document.querySelectorAll(".nav-link");
 
 navLink.forEach((n) => n.addEventListener("click", closeMenu));
@@ -59,4 +82,4 @@ function ajax(method, url, data, success, error) {
     }
   };
   xhr.send(data);
-}
+}*/
