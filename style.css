@@ -1086,8 +1086,9 @@ div.panel.show {
     z-index: 2;
   }
   .header{
-    position:fixed;
+    position:sticky;
     top:0px;
+    left:0px;
   }
   .nav-menu {
     position: fixed;
