@@ -1082,12 +1082,12 @@ div.panel.show {
   .nav-menu {
     position: fixed;
     left: -50%;
-    top: 4rem;
+    top: 3.7rem;
     flex-direction: column;
     font-size: 16px;
     font-weight: 500;
-    background-color: #eeede7;
-    width: 50%;
+    background-color: #333;
+    width: 100vw;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
@@ -1102,6 +1102,9 @@ div.panel.show {
     margin: 0.5rem 0;
     border-bottom: 2px solid var(--dark-red);
     width: 50%;
+  }
+  .nav-item a{
+    color:#fff;
   }
 
   .app-header h2,
