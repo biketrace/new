@@ -1111,8 +1111,8 @@ div.panel.show {
   }
 
   .nav-item {
-    margin: 0.5rem 0;
-    border-bottom: 2px solid var(--dark-red);
+    margin: 0.8rem 0;
+   /* border-bottom: 2px solid var(--dark-red);*/
     width: 50%;
   }
   .nav-item a{
