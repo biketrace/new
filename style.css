@@ -1254,6 +1254,9 @@ div.panel.show {
   .footer-distributed .footer-center i {
     margin-left: 0;
   }
+  .footer-distributed .footer-icons {
+    margin: 20px auto;
+  }
 }
 
 @media only screen and (min-width: 900px) {
