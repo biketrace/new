@@ -930,6 +930,7 @@ div.panel.show {
     position: fixed;
     top: 0px;
     left:0px;
+    z-index:100;
   }
   .lock-header {
     font-size: 1em !important;
