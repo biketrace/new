@@ -926,6 +926,11 @@ div.panel.show {
   .navbar img {
     width: 40%;
   }
+  .header {
+    position: fixed;
+    top: 0px;
+    left:0px;
+  }
   .lock-header {
     font-size: 1em !important;
     padding-top: 10px !important;
