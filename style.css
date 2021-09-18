@@ -1080,6 +1080,10 @@ div.panel.show {
   .nav-menu.active {
     z-index: 2;
   }
+  .header{
+    position:fixed;
+    top:0px;
+  }
   .nav-menu {
     position: fixed;
     left: -100%;
