@@ -1086,7 +1086,7 @@ div.panel.show {
     z-index: 2;
   }
   .header{
-    position:sticky;
+    position:fixed !important;
     top:0px;
     left:0px;
   }
