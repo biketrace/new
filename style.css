@@ -627,7 +627,7 @@ div.panel.show {
   max-width: 840px;
   margin: 0 auto;
   padding: 20px;
-  /*box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);*/
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
   background-color: var(--white);
   border-radius: 8px;
   margin-bottom: 20px;
