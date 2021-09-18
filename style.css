@@ -774,7 +774,8 @@ div.panel.show {
 
 /* Footer links */
 
-.footer-distributed .footer-links {
+.footer-distributed .footer-links,
+.footer-distributed .footer-left p{
   color: #ffffff;
   margin: 20px 0 12px;
   padding: 0;
@@ -1241,7 +1242,8 @@ div.panel.show {
   }
   .footer-distributed .footer-links,
   .footer-distributed .footer-company-name,
-  .footer-distributed .footer-company-about {
+  .footer-distributed .footer-company-about,
+  .footer-distributed .footer-left p{
     text-align: center;
   }
 
