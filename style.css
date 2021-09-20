@@ -51,9 +51,8 @@ p {
   top: 0;
   left: 0;
   z-index: 100;
-  /* box-shadow: 0 5px 2px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1) inset;*/
-
-  background-color: #ddd;
+  box-shadow: 5px 2px 5px 0px rgba(0, 0, 0, 0.4);
+  background-color: var(--white);
 }
 
 .navbar {
