@@ -101,7 +101,7 @@ p {
 }
 
 .nav-link:hover {
-  color: var(--black);
+  color: var(--dark-red);
 }
 
 .nav-logo {
