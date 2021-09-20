@@ -101,7 +101,7 @@ p {
 }
 
 .nav-link:hover {
-  color: var(--dark-red);
+  color: var(--black);
 }
 
 .nav-logo {
@@ -267,7 +267,11 @@ p {
 
 /*App section*/
 #sustainability {
-  background-color: var();
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/sustainability.png);
+  background-size: cover;
+  background-position: bottom center;
+  width: 100%;
   height: 700px;
   margin-top: 50px;
 }
@@ -284,14 +288,14 @@ p {
 }
 
 .sustainability-header {
-  color: black;
+  color: var(--white);
   text-align: center;
 }
 .container-sustainability {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px 0px;
+  margin: 200px 0px;
 }
 .row-sustainability {
   width: 80%;
@@ -305,10 +309,13 @@ p {
   padding-left: 10px;
 }
 .section-sustainability p {
-  background-color: white;
+  background: rgba(0, 0, 0, 0.5);
   padding: 10px;
   font-size: 17px;
   text-align: center;
+  color: white;
+  border-radius: 8px;
+  align-items: center;
 }
 .section-sustainability h3 {
   text-align: center;
@@ -405,7 +412,9 @@ p {
 
 /*Liveability section*/
 #liveability {
-  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),*/
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/sustainability.png);
+  background-size: cover;
 
   width: 100%;
   min-height: 600px;
@@ -769,19 +778,18 @@ div.panel.show {
 /* The company logo */
 
 .footer-left img {
-  width: 40%;
+  width: 20%;
 }
 
 /* Footer links */
 
 .footer-distributed .footer-links,
-.footer-distributed .footer-left p{
+.footer-distributed .footer-left p {
   color: #ffffff;
   margin: 20px 0 12px;
   padding: 0;
 }
-
-.footer-distributed .footer-links a {
+.footer-distributed .footer-left p .footer-distributed .footer-links a {
   display: inline-block;
   line-height: 1.8;
   font-weight: 400;
@@ -794,6 +802,9 @@ div.panel.show {
   font-size: 14px;
   font-weight: normal;
   margin: 0;
+}
+.footer-distibuted .footer-links a:hover {
+  color: var(--dark-red);
 }
 
 /* Footer Center */
@@ -926,12 +937,6 @@ div.panel.show {
   .navbar img {
     width: 40%;
   }
-  .header {
-    position: fixed;
-    top: 0px;
-    left:0px;
-    z-index:100;
-  }
   .lock-header {
     font-size: 1em !important;
     padding-top: 10px !important;
@@ -958,6 +963,9 @@ div.panel.show {
   /* sustainability section*/
   #sustainability {
     margin-top: 150px;
+  }
+  .sustainability-header {
+    margin-top: 350px;
   }
 
   /*Faq*/
@@ -1037,7 +1045,7 @@ div.panel.show {
     min-height: 700px;
   }
   .accordion-info {
-    width: 75%;
+    width: 65%;
   }
 
   /*footer section*/
@@ -1086,14 +1094,10 @@ div.panel.show {
   .nav-menu.active {
     z-index: 2;
   }
-  .header{
-    position:fixed;
-    top:0px;
-    left:0px;
-    z-index:100;
-  }
+
   .nav-menu {
     position: fixed;
+
     left: -100%;
     top: 3.7rem;
     flex-direction: column;
@@ -1103,7 +1107,7 @@ div.panel.show {
     width: 100vw;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);*/
   }
 
   .nav-menu.active {
@@ -1111,12 +1115,13 @@ div.panel.show {
   }
 
   .nav-item {
-    margin: 0.8rem 0;
-   /* border-bottom: 2px solid var(--dark-red);*/
+    margin: 1rem 0;
+    border-bottom: 2px solid var(--dark-red);
     width: 50%;
   }
-  .nav-item a{
-    color:#fff;
+
+  .nav-item a {
+    color: white;
   }
 
   .app-header h2,
@@ -1217,16 +1222,14 @@ div.panel.show {
     font-size: 10px;
   }
   /*liveability*/
-  #liveability {
-    min-height: 800px;
-  }
-  .liveability-items {
-    width: 50%;
-    flex-direction: column;
-  }
-  .liveability-item {
-    border-right: none;
-    text-align: center;
+  #sustainability {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(images/sustainability.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+    margin-top: 50px;
   }
   /*faq*/
   .border-line {
@@ -1243,6 +1246,9 @@ div.panel.show {
   .footer-distributed {
     font: bold 14px sans-serif;
   }
+  .footer-left img {
+    width: 40%;
+  }
 
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
@@ -1255,7 +1261,7 @@ div.panel.show {
   .footer-distributed .footer-links,
   .footer-distributed .footer-company-name,
   .footer-distributed .footer-company-about,
-  .footer-distributed .footer-left p{
+  .footer-distributed .footer-left p {
     text-align: center;
   }
 
