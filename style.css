@@ -207,7 +207,7 @@ p {
   width: 420px;
   height: 400px;
   object-fit: cover;
-  margin-left: 50px;
+  margin-left: 60px;
 }
 .lock-header {
   margin-top: 0px;
@@ -244,7 +244,7 @@ p {
 .contact-header h2,
 .team-section h2 {
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   font-size: 2em;
   line-height: 1.2;
   font-weight: 600;
@@ -253,6 +253,7 @@ p {
 
 .flexbox {
   width: 80%;
+  height: 400px;
   margin: 0 auto;
   display: -webkit-flex;
   display: flex;
@@ -416,7 +417,7 @@ p {
 
 /*Team section */
 .team-section {
-  height: 850px;
+  height: 950px;
 }
 
 .team-row {
@@ -527,7 +528,7 @@ p {
 
 /* Faq section */
 .faq-container {
-  background-color: var(--white);
+  background-color: var(--light-gray);
   height: 600px;
 }
 .faq-header h2 {
@@ -584,8 +585,8 @@ div.panel.show {
 }
 
 /*Contact section*/
-.contact {
-  background-color: var(--light-gray);
+#contact {
+  /*background-color: var(--light-gray);*/
   height: 800px;
   width: 100%;
   display: flex;
@@ -601,7 +602,7 @@ div.panel.show {
   max-width: 840px;
   margin: 0 auto;
   padding: 20px;
-  /* box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);*/
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
   background-color: var(--white);
   border-radius: 8px;
   margin-bottom: 20px;
@@ -713,6 +714,9 @@ div.panel.show {
 .search-text h4 {
   color: var(--white);
   font-weight: 700;
+}
+.button:hover {
+  background-color: #333;
 }
 
 /*new*/
@@ -899,53 +903,6 @@ div.panel.show {
   }
 }
 @media only screen and (max-width: 480px) {
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  .nav-menu.active {
-    z-index: 2;
-  }
-
-  .nav-menu.active {
-    z-index: 2;
-  }
-
-  .nav-menu {
-    position: fixed;
-
-    left: -100%;
-    top: 3.7rem;
-    flex-direction: column;
-    font-size: 16px;
-    font-weight: 500;
-    background-color: #333;
-    width: 100vw;
-    text-align: center;
-    transition: 0.3s;
-    /* box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);*/
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
-  .nav-item {
-    margin: 1rem 0;
-    border-bottom: 2px solid var(--dark-red);
-    width: 50%;
-  }
-
-  .nav-item a {
-    color: white;
-  }
   .navbar img {
     width: 40%;
   }
@@ -1149,7 +1106,7 @@ div.panel.show {
 
   /*app*/
   #app {
-    height: 900px;
+    height: 600px;
   }
   .flexbox {
     flex-direction: column;
@@ -1166,7 +1123,7 @@ div.panel.show {
     height: 950px;
   }
   .lock-column {
-    margin-top: 90px;
+    margin-top: 0px;
     flex-direction: column-reverse;
   }
   .lock-info {
