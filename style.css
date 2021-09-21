@@ -4,6 +4,11 @@
   --dark-gray: #7f7f7f;
   --light-gray: #f9f9f9;
   --dark-red: #d81159;
+  /*--dark-red: #ff5d8f;
+  --dark-red: #ff6392;
+  --dark-red: #ff477e;*/
+  --color-hover: #ff6392;
+  --color-default: #f20089;
   --white: #fff;
   --black: #000000;
   --light-pink: #f1e7e8;
@@ -25,8 +30,9 @@ body {
   line-height: 26px;
   overflow-x: hidden;
 }
-html{
-  overflow-x:hidden;
+html {
+  overflow-x: hidden;
+}
 
 li {
   list-style: none;
@@ -49,7 +55,7 @@ p {
 }
 
 .header {
-  width:100vw;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -117,7 +123,7 @@ p {
 }
 .lock {
   display: block;
-  max-width: 1100px;
+  max-width: 1300px;
   height: 700px;
   display: flex;
   flex-direction: column;
@@ -521,7 +527,7 @@ p {
 
 /* Faq section */
 .faq-container {
-  background-color: var(--light-gray);
+  background-color: var(--white);
   height: 600px;
 }
 .faq-header h2 {
@@ -579,6 +585,7 @@ div.panel.show {
 
 /*Contact section*/
 .contact {
+  background-color: var(--light-gray);
   height: 800px;
   width: 100%;
   display: flex;
@@ -594,7 +601,7 @@ div.panel.show {
   max-width: 840px;
   margin: 0 auto;
   padding: 20px;
-  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);*/
   background-color: var(--white);
   border-radius: 8px;
   margin-bottom: 20px;
@@ -772,7 +779,7 @@ div.panel.show {
 }
 
 .footer-distributed .footer-center i {
-  background-color: var(--dark-red);
+  background-color: #33383b;
   color: #ffffff;
   font-size: 25px;
   width: 38px;
@@ -805,7 +812,7 @@ div.panel.show {
 }
 
 .footer-distributed .footer-center p a {
-  color: lightseagreen;
+  color: white;
   text-decoration: none;
 }
 
@@ -892,6 +899,53 @@ div.panel.show {
   }
 }
 @media only screen and (max-width: 480px) {
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu.active {
+    z-index: 2;
+  }
+
+  .nav-menu.active {
+    z-index: 2;
+  }
+
+  .nav-menu {
+    position: fixed;
+
+    left: -100%;
+    top: 3.7rem;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #333;
+    width: 100vw;
+    text-align: center;
+    transition: 0.3s;
+    /* box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);*/
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1rem 0;
+    border-bottom: 2px solid var(--dark-red);
+    width: 50%;
+  }
+
+  .nav-item a {
+    color: white;
+  }
   .navbar img {
     width: 40%;
   }
