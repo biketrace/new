@@ -25,9 +25,7 @@ for (i = 0; i < acc.length; i++) {
     this.nextElementSibling.classList.toggle("show");
   };
 }
-/* for smooth <scrolling*/
 
-$("a").smoothscroll();
 
 /* Button scroll to top*/
 const btnScrollToTop = document.querySelector("#btnScrollToTop");
