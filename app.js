@@ -25,3 +25,18 @@ for (i = 0; i < acc.length; i++) {
     this.nextElementSibling.classList.toggle("show");
   };
 }
+/* for smooth <scrolling*/
+
+$("a").smoothscroll();
+
+/* Button scroll to top*/
+const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+btnScrollToTop.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+  /* $("html, body").animate({ scrollTop: 0 }, "slow");*/
+});
