@@ -117,10 +117,7 @@ p {
 }
 
 /* Lock Section */
-#lock,
-#app {
-  margin-bottom: 50px;
-}
+
 #lock {
   background-color: var(--light-gray);
 }
@@ -265,7 +262,7 @@ p {
 .team-section h2 {
   margin-top: 0px;
   margin-bottom: 80px;
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 1.2;
   font-weight: 600;
   text-align: center;
@@ -276,6 +273,47 @@ p {
 }
 .fa-cog {
   color: #d31159;
+}
+/* new app*/
+
+.app-section .icon-box {
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.app-section .icon-box:hover .app-title a {
+  color: #d31159;
+}
+.app-section .icon-box .app-icon {
+  float: left;
+  color: #d31159;
+  font-size: 40px;
+}
+.app-section .icon-box .app-title {
+  margin-left: 70px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.app-section .icon-box .app-title a {
+  color: #333;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.app-section .icon-box .app-para {
+  margin-left: 70px;
+  line-height: 24px;
+  font-size: 16px;
+}
+.app-section .app-main-heading {
+  color: #333;
+  padding: 0;
+  margin-bottom: 20px;
+  line-height: 1;
+  font-size: 60px;
+  font-weight: 600;
 }
 
 /*vision section*/
