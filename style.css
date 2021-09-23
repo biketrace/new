@@ -1,12 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
-
+/*@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 :root {
   --dark-gray: #7f7f7f;
   --light-gray: #f9f9f9;
-  --dark-red: #e0115f;
-  /*--dark-red: #ff5d8f;
-  --dark-red: #ff6392;
-  --dark-red: #ff477e;*/
+  --primary-color: #e0115f;
   --color-hover: #ff6392;
   --color-default: #f20089;
   --white: #fff;
@@ -23,11 +21,13 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 18px;
+  /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;*/
+  font-family: "opens Sans", sans-serif;
+  font-size: 15px;
+  color: #666;
   background: #fff;
-  line-height: 26px;
+  line-height: 1.715;
   overflow-x: hidden;
 }
 html {
@@ -117,19 +117,26 @@ p {
 }
 
 /* Lock Section */
-#lock {
-  background-color: var(--light-gray);
+#lock,
+#app {
   margin-bottom: 50px;
 }
-.lock {
+#lock {
+  background-color: var(--light-gray);
+}
+#app {
+  background-color: var(--white);
+}
+.lock,
+.app {
   display: block;
-  max-width: 1300px;
+  width: 100vw;
   height: 700px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin: auto;
-  background-color: var(--light-gray);
+  /*background-color: var(--light-gray);*/
 }
 .container {
   width: 100%;
@@ -137,13 +144,20 @@ p {
   align-items: center;
   justify-content: center;
 }
-.lock-row {
+.lock-row,
+.app-row {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.lock-row {
   flex-direction: column;
 }
-.lock-column {
+.app-row {
+  flex-direction: row;
+}
+.lock-column,
+.app-column {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,7 +167,8 @@ p {
   overflow: hidden;
   border-radius: 10px;
 }
-.lock-info {
+.lock-info,
+.app-info {
   padding: 20px;
   flex-basis: 50%;
   height: 100%;
@@ -162,10 +177,12 @@ p {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--light-gray);
+  /* background-color: var(--light-gray);*/
   color: #333;
 }
-.lock-info p {
+
+.lock-info p,
+.app-info p {
   padding: 20px 0px;
   margin-bottom: 10px;
   line-height: 1.8;
@@ -197,12 +214,14 @@ p {
   border: none;
 }
 
-.lock-img {
+.lock-img,
+.app-img {
   flex-basis: 50%;
   overflow: hidden;
   position: relative;
 }
-.lock-img img {
+.lock-img img,
+.app-img img {
   background-color: transparent;
   width: 420px;
   height: 400px;
@@ -217,7 +236,8 @@ p {
   font-weight: 700;
 }
 
-.lock-img:after {
+.lock-img:after,
+.app-img:after {
   content: "";
   position: absolute;
   left: 0;
@@ -250,46 +270,13 @@ p {
   font-weight: 600;
   text-align: center;
 }
-
-.flexbox {
-  width: 80%;
-  height: 400px;
-  margin: 0 auto;
-  display: -webkit-flex;
-  display: flex;
+.app-information {
+  font-size: 16px;
+  padding-right: 10px;
 }
-.leftside,
-.rightside {
-  -webkit-flex: 1;
-  flex: 1;
-  background: none;
+.fa-cog {
+  color: #d31159;
 }
-.app-info {
-  width: 400px;
-}
-.app-info h3 {
-  font-size: 20px;
-}
-.app-info p {
-  font-size: 17px;
-}
-.feature {
-  display: flex;
-  margin: 40px 0px;
-}
-.feature-img img {
-  width: 100px;
-  height: 100px;
-}
-
-.leftside,
-.rightside {
-  color: var(--black);
-  padding: 2%;
-  text-align: left;
-}
-
-/*End of App section*/
 
 /*vision section*/
 #vision {
@@ -412,7 +399,7 @@ p {
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
-  width: 35%;
+  width: 40%;
 }
 
 /*Team section */
@@ -454,7 +441,7 @@ p {
   padding: 10px;
 }
 .team__container h3 {
-  color: var(--dark-red);
+  color: var(--primary-color);
   font-size: 18px;
   margin: -5px 0px;
 }
@@ -477,7 +464,7 @@ p {
 }
 
 .teams-socialmedia__icons img:hover {
-  border: 2px solid var(--dark-red);
+  border: 2px solid var(--primary-color);
 }
 .teams-socialmedia__icons img {
   width: 30px;
@@ -622,7 +609,7 @@ div.panel.show {
   width: 100%;
   padding: 5px;
   font-size: 18px;
-  border: 2px solid var(--dark-red);
+  border: 2px solid var(--primary-color);
   margin-top: 5px;
   border-radius: 4px;
 }
@@ -679,12 +666,12 @@ div.panel.show {
 
 #btnScrollToTop {
   position: fixed;
-  right: 0px;
+  right: 5px;
   bottom: 70px;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  background: var(--dark-red);
+  background: var(--primary-color);
   color: var(--white);
   border: none;
   outline: none;
@@ -721,7 +708,7 @@ div.panel.show {
 }
 
 .search-text .btn-search {
-  background: var(--dark-red);
+  background: var(--primary-color);
   border: none;
   border-radius: 8px;
   color: var(--white);
@@ -800,7 +787,7 @@ div.panel.show {
   margin: 0;
 }
 .footer-distibuted .footer-links a:hover {
-  color: var(--dark-red);
+  color: var(--primary-color);
 }
 
 /* Footer Center */
@@ -906,7 +893,7 @@ div.panel.show {
   margin-bottom: 5px;
 }
 .footer-icons a:hover {
-  background-color: var(--dark-red);
+  background-color: var(--primary-color);
 }
 .footer-bottom {
   background-color: var(--middle-footer);
@@ -1143,11 +1130,16 @@ div.panel.show {
   }
 
   /*app*/
+
   #app {
     height: 600px;
   }
-  .flexbox {
-    flex-direction: column;
+
+  .app-rightside {
+    margin: 0px 10px;
+  }
+  .app-information {
+    padding-right: 20px;
   }
 
   /*lock*/
@@ -1292,22 +1284,26 @@ div.panel.show {
 }
 
 @media only screen and (min-width: 900px) {
-  .lock-column {
+  .lock-column,
+  .app-column {
     flex-direction: row;
   }
   .lock-column:nth-child(even) {
     flex-direction: row-reverse;
   }
-  .lock-column {
+  .lock-column,
+  .app-column {
     height: 500px;
     margin: 0;
     width: 100%;
     border-radius: 0;
   }
-  .lock-row .lock-info {
+  .lock-row .lock-info,
+  .app-row .app-info {
     height: 80%;
   }
-  .lock-row .lock-img {
+  .lock-row .lock-img,
+  .app-row .lock-img {
     height: 80%;
   }
 
