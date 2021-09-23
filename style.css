@@ -298,7 +298,7 @@ p {
   line-height: 1.2;
 }
 .app-section .icon-box .app-title a {
-  color: #333;
+  color: #666;
   transition: 0.3s;
   text-decoration: none;
 }
@@ -308,7 +308,7 @@ p {
   font-size: 16px;
 }
 .app-section .app-main-heading {
-  color: #333;
+  color: #666;
   padding: 0;
   margin-bottom: 20px;
   line-height: 1;
