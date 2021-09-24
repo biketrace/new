@@ -104,12 +104,12 @@ p {
 .nav-link.active {
   font-size: 1.2rem;
   font-weight: 400;
-  color: var(--dark-red);
+  color: var(--primary-color);
   border-bottom: 2px solid black;
 }
 
 .nav-link:hover {
-  color: var(--dark-red);
+  color: var(--primary-color);
 }
 
 .nav-logo {
@@ -189,7 +189,7 @@ p {
   margin: 0px auto;
 }
 .btn button {
-  background-color: var(--dark-red);
+  background-color: var(--primary-color);
   display: block;
   margin: 12px auto;
   width: 180px;
@@ -676,7 +676,7 @@ div.panel.show {
   transition: 0.3s ease background-color;
 }
 .btn2:hover {
-  background-color: var(--dark-red);
+  background-color: var(--primary-color);
   border: none;
 }
 #status {
