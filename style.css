@@ -104,12 +104,12 @@ p {
 .nav-link.active {
   font-size: 1.2rem;
   font-weight: 400;
-  color: var(--primary-color);
+  color: var(--dark-red);
   border-bottom: 2px solid black;
 }
 
 .nav-link:hover {
-  color: var(--primary-color);
+  color: var(--dark-red);
 }
 
 .nav-logo {
@@ -136,7 +136,7 @@ p {
   /*background-color: var(--light-gray);*/
 }
 .container {
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,6 +314,103 @@ p {
   line-height: 1;
   font-size: 60px;
   font-weight: 600;
+}
+/*end*/
+
+.section-app {
+  padding-top: 40px;
+  padding-bottom: 120px;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  color: #666;
+}
+
+.section-app .header-section {
+  margin-bottom: 35px;
+}
+
+.section-app .header-section .title {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-app .header-section .title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 1px;
+  background-color: var(--primary-color);
+}
+
+.section-app .header-section .title:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.section-app .header-section .title span {
+  color: var(--primary-color);
+}
+
+.section-app .header-section .description {
+  color: #6f6f71;
+}
+
+.section-app .single-app {
+  /* margin-top: 40px;*/
+  background-color: #fff;
+  /*box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);*/
+}
+
+.section-app .single-app .part-1 {
+  padding: 40px 40px 25px;
+  /* border-bottom: 2px solid #1d1e23;*/
+}
+
+.section-app .single-app .part-1 i {
+  margin-bottom: 25px;
+  font-size: 50px;
+  color: var(--primary-color);
+  display: block;
+  text-align: center;
+}
+
+.section-app .single-app .part-1 .title {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.section-app .single-app .part-2 {
+  padding: 0px 40px 40px;
+}
+
+.section-app .single-app .part-2 .description {
+  margin-bottom: 22px;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.section-app .single-app .part-2 a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 /*vision section*/
@@ -676,7 +773,7 @@ div.panel.show {
   transition: 0.3s ease background-color;
 }
 .btn2:hover {
-  background-color: var(--primary-color);
+  background-color: var(--dark-red);
   border: none;
 }
 #status {
